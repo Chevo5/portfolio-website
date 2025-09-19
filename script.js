@@ -182,8 +182,8 @@ function showFormMessage(message, type) {
         border-radius: 6px;
         font-weight: 500;
         ${type === 'success' 
-            ? 'background: #D1FAE5; color: #065F46; border: 1px solid #A7F3D0;' 
-            : 'background: #FEE2E2; color: #991B1B; border: 1px solid #FECACA;'
+            ? 'background: #166534; color: #BBF7D0; border: 1px solid #22C55E;' 
+            : 'background: #7F1D1D; color: #FECACA; border: 1px solid #EF4444;'
         }
     `;
     
