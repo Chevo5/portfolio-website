@@ -152,10 +152,7 @@ main {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--primary-color), #7C3AED);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: white;
 }
 
 .hero-title {
