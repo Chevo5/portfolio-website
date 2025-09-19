@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AJ</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-name">Alex Johnson</h1>
+                    <h2 class="hero-title">Full-Stack Developer & Digital Craftsperson</h2>
+                    <p class="hero-description">
+                        I create beautiful, functional web experiences that solve real problems. 
+                        With 5+ years of experience in modern technologies, I help businesses 
+                        and startups bring their digital visions to life.
+                    </p>
+                    <button class="cta-button" onclick="showSection('portfolio')">View My Work</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Based in San Francisco, I'm a passionate developer who transitioned 
+                            from graphic design to web development. I believe great code should 
+                            be as elegant as great design.
+                        </p>
+                        <div class="experience">
+                            <h3>Experience</h3>
+                            <p>5+ years building scalable web applications for startups and enterprises</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-live="https://ecommerce-demo.com" data-github="https://github.com/alexj/ecommerce">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x250/4F46E5/ffffff?text=E-commerce+Platform" alt="E-commerce Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link live">Live Site</a>
+                                    <a href="#" class="portfolio-link github">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-stack e-commerce solution built with React and Node.js</p>
+                            <div class="tech-stack">React • Node.js • PostgreSQL</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-live="https://taskmanager-demo.com" data-github="https://github.com/alexj/taskmanager">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x250/059669/ffffff?text=Task+Manager" alt="Task Management App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link live">Live Demo</a>
+                                    <a href="#" class="portfolio-link github">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative task management with real-time updates</p>
+                            <div class="tech-stack">Vue.js • Express • Socket.io</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-live="https://restaurant-example.com">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x250/DC2626/ffffff?text=Restaurant+Site" alt="Restaurant Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link live">Live Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Restaurant Website</h3>
+                            <p>Modern restaurant website with online ordering system</p>
+                            <div class="tech-stack">WordPress • Custom PHP</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-github="https://github.com/alexj/dataviz">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x250/7C3AED/ffffff?text=Data+Visualization" alt="Data Visualization Tool">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link github">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Data Visualization Tool</h3>
+                            <p>Interactive dashboard for complex data analysis</p>
+                            <div class="tech-stack">D3.js • Python • FastAPI</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-live="https://apps.apple.com/weather-app" data-github="https://github.com/alexj/weather-app">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x250/0891B2/ffffff?text=Weather+App" alt="Mobile Weather App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link live">App Store</a>
+                                    <a href="#" class="portfolio-link github">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Mobile Weather App</h3>
+                            <p>Cross-platform weather app with location services</p>
+                            <div class="tech-stack">React Native • REST API</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-live="https://alexjohnson-blog.com" data-github="https://github.com/alexj/blog">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/400x250/EA580C/ffffff?text=Personal+Blog" alt="Personal Blog">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link live">Live Site</a>
+                                    <a href="#" class="portfolio-link github">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Personal Blog</h3>
+                            <p>JAMstack blog with headless CMS integration</p>
+                            <div class="tech-stack">Next.js • Contentful • Vercel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/alexjohnson" class="social-link">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/alexjohnsondev" class="social-link">
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:alex@alexjohnson.dev" class="social-link">
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
