@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #6366F1;
-    --primary-hover: #4F46E5;
+    --primary-color: #ffffff;
+    --primary-hover: #c2c1dd;
     --text-primary: #FFFFFF;
-    --text-secondary: #94A3B8;
+    --text-secondary: #d4e4f9;
     --background: #001C36;
     --surface: #1E293B;
     --surface-light: #334155;
@@ -37,9 +37,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(123, 131, 165, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 17px solid var(--border);
     z-index: 1000;
 }
 
@@ -181,7 +181,7 @@ main {
 
 .cta-button {
     background: var(--primary-color);
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -359,10 +359,9 @@ main {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -371,6 +370,7 @@ main {
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--border);
+    width: 100%;
 }
 
 .form-group {
@@ -404,7 +404,7 @@ main {
 
 .submit-button {
     background: var(--primary-color);
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 1rem 2rem;
     font-size: 1rem;
